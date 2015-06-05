@@ -8,6 +8,7 @@
   "dependencies": {
     "body-parser": "^1.4.3",
     "express": "~4.4.1",
+    "forever-monitor": "^1.5.2",
     "lodash": "^3.3.0",
     "netatmo": "^1.3.0"
   },
