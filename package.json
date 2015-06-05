@@ -1,0 +1,17 @@
+{
+  "name": "hansDashboard",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A dashboard for Hans Connected device",
+  "repository": "",
+  "license": "",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "~4.4.1",
+    "lodash": "^3.3.0",
+    "netatmo": "^1.3.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
