@@ -44,3 +44,42 @@ span{
 #loading{
   margin-top: 100px;
 }
+
+.power{
+  opacity: 0.4;
+  line-height: 1.2em;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.power:hover{
+  opacity: 1;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.flower{
+  line-height: 1.2em;
+}
+
+.waiting {
+  color: #d9edf7;
+}
+
+.flowerOk{
+  color: #FFF;
+}
+
+.flowerWarning{
+  color: #fcf8e3;
+}
+
+.flowerCritical{
+  color: #f2dede;
+}

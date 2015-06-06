@@ -73,6 +73,18 @@ $(document).ready(function() {
     setInterval(loadNetatmo, 600000); //Update the weather every 10 minutes.
   }
 
+  function loadFlower(){
+    $.getJSON("/flower", function(data){
+      console.log(data);
+      var html='',
+          classFlower=data.status;
+      $("#loadingFlower").remove();
+      html += '<span class="flower fa fa-pagelines '+classFlower+'"></span>';
+      $(".plant").html(html);
+    });
+    setInterval(loadNetatmo, 600000); //Update the flower every 10 minutes.
+  }
+
 
   //date + time
   getTimeDisplay();
@@ -81,4 +93,5 @@ $(document).ready(function() {
   getLocation();
   //weather inside
   loadNetatmo();
+  loadFlower();
 })
