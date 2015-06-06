@@ -66,7 +66,7 @@ $(document).ready(function() {
     $.getJSON("/device", function(data){
       var html='';
       $("#loadingDevices").remove();
-      html += '<div class="col-sm-12"><span class="insideTemp">'+data[0].insideTemp+'</span>'+
+      html += '<div class="col-sm-12 col-xs-12"><span class="insideTemp">'+data[0].insideTemp+'</span>'+
               '<span class="insidePlace">'+data[0].insidePlace+'</span></div>';
       $(".secondRow").html(html);
     });

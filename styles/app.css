@@ -83,3 +83,37 @@ span{
 .flowerCritical{
   color: #f2dede;
 }
+@media screen and (max-width: 767px) {
+  .time{
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .date{
+    font-size: 0.3em;
+    font-weight: 300;
+  }
+
+   .insideTemp {
+    font-size: 1em;
+    font-weight: 400;
+   }
+
+  .outsideTemp {
+    font-size: 0.5em;
+    font-weight: 300;
+  }
+
+  .insidePlace, .outsidePlace{
+    font-size: 0.3em;
+    font-weight: 300;
+  }
+
+  .flower, .power{
+    font-size: 2em !important;
+  }
+
+  .thirdRow, .secondRow {
+    margin-top: 150px;
+  }
+}

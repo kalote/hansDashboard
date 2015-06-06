@@ -5,7 +5,7 @@
     <title>Connected Device Dashboard</title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!--STYLES-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
@@ -21,7 +21,7 @@
     <div class="container">
       <div class="row">
         <!--TIME / DATE-->
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-xs-12">
           <span class="time"></span>
           <span class="date"></span>
         </div>
@@ -32,19 +32,19 @@
       </div>
       <div class="row thirdRow">
         <!--TEMPERATURE OUTSIDE-->
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-xs-4">
           <span class="fa fa-refresh fa-spin fa-fw margin-bottom" id="loading"></span>
           <span class="outsideTemp"></span>
           <span class="outsideIcon"></span>
           <span class="outsidePlace"></span>
         </div>
         <!--WATER PLANT-->
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-xs-4">
           <span class="fa fa-refresh fa-spin fa-fw margin-bottom" id="loadingFlower"></span>
           <span class="plant"></span>
         </div>
         <!--LIGHT ON/OFF-->
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-xs-4">
           <span class="power fa fa-power-off fa-3x"></span>
         </div>
       </div>
