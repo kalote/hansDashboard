@@ -37,6 +37,7 @@ span{
 .outsidePlace {
   font-size: 3vh;
   font-weight: 400;
+  line-height: .4;
 }
 
 .insideTemp {
@@ -74,7 +75,7 @@ span{
 }
 
 .flower{
-  line-height: 1em;
+  line-height: 1.4em;
 }
 
 .waiting {
