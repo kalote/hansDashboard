@@ -1,44 +1,53 @@
 body{
-	background-color: #5B9BD5;
-	color: #FFF;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 60px;
+  background-color: #5B9BD5;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+}
+
+.firstRow {
+  height: 40vh;
+}
+
+.secondRow {
+  height: 35vh;
+}
+
+.thirdRow {
+  height: 25vh;
 }
 
 span{
-	width: 100%;
-	display: block;
-}
-
-.secondRow{
-	margin-top: 80px;
+  width: 100%;
+  display: block;
 }
 
 .time{
-	font-size: 3em;
-	font-weight: 600;
-	line-height: 0.9em;
+  font-size: 30vh;
+  font-weight: 300;
+  line-height: 0.9em;
 }
 
-.date{
-	font-size: 0.5em;
-	font-weight: 400;
-}
-
- .insideTemp {
-  font-size: 2em;
+.date, .insidePlace{
+  font-size: 5vh;
   font-weight: 400;
- }
+}
+
+.outsidePlace {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+.insideTemp {
+  font-size: 15vh;
+  font-weight: 300;
+}
 
 .outsideTemp {
-	font-size: 1em;
-	font-weight: 600;
-}
-
-.insidePlace, .outsidePlace{
-	font-size: 0.5em;
-	font-weight: 300;
+  font-size: 3vh;
+  font-weight: 600;
+  line-height: 1;
 }
 
 #loading{
@@ -47,7 +56,7 @@ span{
 
 .power{
   opacity: 0.4;
-  line-height: 1.2em;
+  line-height: 1;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
@@ -65,7 +74,7 @@ span{
 }
 
 .flower{
-  line-height: 1.2em;
+  line-height: 1em;
 }
 
 .waiting {
@@ -83,37 +92,20 @@ span{
 .flowerCritical{
   color: #f2dede;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 768px) {
   .time{
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 30vmin;
+  }
+  .firstRow {
+    height: 35vh;
   }
 
-  .date{
-    font-size: 0.3em;
-    font-weight: 300;
+  .secondRow {
+    height: 40vh;
   }
 
-   .insideTemp {
-    font-size: 1em;
-    font-weight: 400;
-   }
-
-  .outsideTemp {
-    font-size: 0.5em;
-    font-weight: 300;
-  }
-
-  .insidePlace, .outsidePlace{
-    font-size: 0.3em;
-    font-weight: 300;
-  }
-
-  .flower, .power{
-    font-size: 2em !important;
-  }
-
-  .thirdRow, .secondRow {
-    margin-top: 150px;
+  .thirdRow {
+    height: 25vh;
   }
 }

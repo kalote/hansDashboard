@@ -79,7 +79,7 @@ $(document).ready(function() {
       var html='',
           classFlower=data.status;
       $("#loadingFlower").remove();
-      html += '<span class="flower fa-3x fa fa-pagelines '+classFlower+'"></span>';
+      html += '<span class="flower fa-2x fa fa-pagelines '+classFlower+'"></span>';
       $(".plant").html(html);
     });
     setInterval(loadNetatmo, 600000); //Update the flower every 10 minutes.
@@ -89,9 +89,9 @@ $(document).ready(function() {
   //date + time
   getTimeDisplay();
   getDateDisplay();
-  //weather outside
+  // //weather outside
   getLocation();
-  //weather inside
+  // //weather inside
   loadNetatmo();
   loadFlower();
 })
