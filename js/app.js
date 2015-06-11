@@ -4,7 +4,6 @@ $(document).ready(function() {
     var h=today.getHours();
     var m=today.getMinutes();
     m = checkTime(m);
-    console.log(h+":"+m);
     $(".time").text(h+":"+m);
     setTimeout(getTimeDisplay,500);
 	}
@@ -12,7 +11,7 @@ $(document).ready(function() {
   function getDateDisplay() {
     var now = new Date();
     var wd = dayName(now.getDay());
-    var d = now.getDate().length > 1 ? now.getDate() : "0"+now.getDate();
+    var d = now.getDate().toString().length > 1 ? now.getDate() : "0"+now.getDate();
     var m = monthName((now.getMonth()+1));
     $(".date").text(wd+" "+d+" "+m+" "+now.getFullYear());
     setTimeout(getDateDisplay,3600000);
