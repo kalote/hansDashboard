@@ -28,11 +28,13 @@ app.get('/device', function(req, res){
   api.getDevicelist(function(err, devices, modules) {
     var out = [];
     _.each(devices, function(key,val) {
-      //hard code for HONG KONG
-      if (key.station_name == "Hong Kong"){
+      //access_code 79pegY3aEXD _id 70:ee:50:03:92:40 (petit musc)
+      //access_code EH1nxEwWaHpJiiTsf3nm _id 70:ee:50:05:6d:08 (oasis alicante)
+      //access_code IIdADfRol3B8Q _id 70:ee:50:02:fd:44 (paris office (former hong kong))
+      if (key.access_code === "IIdADfRol3B8Q"){
         out.push({
-            insidePlace: key.module_name,
-            insideTemp: key.dashboard_data.Temperature+"&deg;C"
+          insidePlace: key.module_name,
+          insideTemp: Math.round(key.dashboard_data.Temperature)+"&deg;"
         });
       }
     });

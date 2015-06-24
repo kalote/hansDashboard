@@ -51,7 +51,7 @@ $(document).ready(function() {
       unit: 'c',
       success: function(weather) {
         $("#loading").remove();
-        $(".outsideTemp").html(weather.temp+"&deg;"+weather.units.temp);
+        $(".outsideTemp").html(Math.round(weather.temp)+"&deg;");
         $(".outsideIcon").html("<i class='icon-"+weather.code+"'></i>");
         $(".outsidePlace").text(weather.city);
       },
@@ -65,16 +65,15 @@ $(document).ready(function() {
     $.getJSON("/device", function(data){
       var html='';
       $("#loadingDevices").remove();
-      html += '<div class="col-sm-12 col-xs-12"><span class="insideTemp">'+data[0].insideTemp+'</span>'+
-              '<span class="insidePlace">'+data[0].insidePlace+'</span></div>';
-      $(".secondRow").html(html);
+      html += '<span class="insideTemp">'+data[0].insideTemp+'</span>'+
+              '<span class="insidePlace">'+data[0].insidePlace+'</span>';
+      $("#netatmo").html(html);
     });
     setInterval(loadNetatmo, 600000); //Update the weather every 10 minutes.
   }
 
   function loadFlower(){
     $.getJSON("/flower", function(data){
-      console.log(data);
       var html='',
           classFlower=data.status;
       $("#loadingFlower").remove();

@@ -6,16 +6,19 @@ body{
   font-size: 60px;
 }
 
-.firstRow {
-  height: 40vh;
+.date, .insidePlace{
+  font-size: .8em;
+  font-weight: 400;
 }
 
-.secondRow {
-  height: 35vh;
+#timeAndDate{
+  margin-top: 25px;
+  margin-bottom: 120px;
 }
 
-.thirdRow {
-  height: 25vh;
+#netatmo{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 span{
@@ -24,14 +27,8 @@ span{
 }
 
 .time{
-  font-size: 30vh;
-  font-weight: 300;
+  font-size: 3.5em;
   line-height: 0.9em;
-}
-
-.date, .insidePlace{
-  font-size: 5vh;
-  font-weight: 400;
 }
 
 .outsidePlace {
@@ -41,17 +38,16 @@ span{
 }
 
 .insideTemp {
-  font-size: 10vh;
-  font-weight: 300;
+  font-size: 2em;
 }
 
 .outsideTemp {
-  font-size: 3vh;
   font-weight: 600;
-  line-height: 1;
+  line-height: .2;
+  font-size: .6em;
 }
 
-#loading{
+#loading, #loadingFlower, #loadingDevices{
   margin-top: 100px;
 }
 
@@ -96,17 +92,18 @@ span{
 
 @media screen and (max-width: 768px) {
   .time{
-    font-size: 30vmin;
+    font-size: 3.5em;
   }
-  .firstRow {
-    height: 35vh;
+  .date, .insidePlace{
+    font-size: .5em;
+    font-weight: 400;
   }
-
-  .secondRow {
-    height: 40vh;
+  #timeAndDate{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
   }
-
-  .thirdRow {
-    height: 25vh;
-  }
+  #netatmo{
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
 }
