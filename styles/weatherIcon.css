@@ -12,10 +12,10 @@
 i {
   color: #fff;
   font-family: weather;
-  font-size: 150px;
+  font-size: 110px;
   font-weight: normal;
   font-style: normal;
-  line-height: 0.7;
+  line-height: 0.5em;
 }
 
 .icon-0:before { content: ":"; }

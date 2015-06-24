@@ -6,19 +6,30 @@ body{
   font-size: 60px;
 }
 
+#flowers, #switch{
+  padding-top: 30px;
+}
+
 .date, .insidePlace{
   font-size: .8em;
   font-weight: 400;
 }
 
+.fullscreen {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  cursor: pointer;
+}
+
 #timeAndDate{
   margin-top: 25px;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 
 #netatmo{
   margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  margin-bottom: 45px;
 }
 
 span{
@@ -32,9 +43,9 @@ span{
 }
 
 .outsidePlace {
-  font-size: 3vh;
+  font-size: .3em;
   font-weight: 400;
-  line-height: .4;
+  padding-top: 25px;
 }
 
 .insideTemp {
@@ -43,7 +54,7 @@ span{
 
 .outsideTemp {
   font-weight: 600;
-  line-height: .2;
+  padding-top: 30px;
   font-size: .6em;
 }
 
@@ -103,7 +114,7 @@ span{
     padding-left: 0px !important;
   }
   #netatmo{
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
 }
